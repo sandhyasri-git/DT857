@@ -28,7 +28,7 @@ public class BlogController {
 	@Autowired
 	private Blog blog;
 
-
+	// To get All users
 	
 	@RequestMapping(value="/blog/",method=RequestMethod.POST,headers="Accept=application/json")
 	public ResponseEntity<Blog> createBlog(@RequestBody Blog blog,HttpSession httpSession){
